@@ -24,16 +24,17 @@ public class DrawView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        matrix.setRotate(30);
+        canvas.setMatrix(matrix);
         canvas.drawColor(Color.BLACK);
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.YELLOW);
-        canvas.drawCircle(100, 100, 20, paint);
+        canvas.drawCircle(160, 160, 20, paint);
         paint.setStyle(Paint.Style.STROKE);
         paint.setColor(Color.CYAN);
         paint.setStrokeWidth(3);
-        matrix.setRotate(30);
-        canvas.setMatrix(matrix);
+        /*matrix.setRotate(30);
+        canvas.setMatrix(matrix);*/
         //canvas.rotate(-162);
         canvas.drawOval(125, 50, 600, 300, paint);
         canvas.rotate(30);
