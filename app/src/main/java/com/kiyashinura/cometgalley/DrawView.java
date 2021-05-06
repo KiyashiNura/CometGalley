@@ -28,7 +28,7 @@ public class DrawView extends View {
         canvas.drawColor(Color.BLUE);
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.YELLOW);
-        canvas.drawCircle(160, 160, 20, paint);
+        canvas.drawCircle(155, 170, 20, paint);
         paint.setStyle(Paint.Style.STROKE);
         paint.setColor(Color.WHITE);
         paint.setStrokeWidth(3);
