@@ -1,4 +1,4 @@
-package com.satanbakespancakes.comet;
+package com.kiyashinura.cometgalley;
 
 import org.junit.Test;
 

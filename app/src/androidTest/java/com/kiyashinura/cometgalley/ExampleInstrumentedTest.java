@@ -1,4 +1,4 @@
-package com.satanbakespancakes.comet;
+package com.kiyashinura.cometgalley;
 
 import android.content.Context;
 

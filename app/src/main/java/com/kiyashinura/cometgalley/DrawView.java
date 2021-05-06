@@ -1,11 +1,10 @@
-package com.satanbakespancakes.comet;
+package com.kiyashinura.cometgalley;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.graphics.RectF;
 import android.os.Build;
 import android.view.View;
 
@@ -26,16 +25,13 @@ public class DrawView extends View {
         super.onDraw(canvas);
         matrix.setRotate(30);
         canvas.setMatrix(matrix);
-        canvas.drawColor(Color.BLACK);
+        canvas.drawColor(Color.BLUE);
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.YELLOW);
         canvas.drawCircle(160, 160, 20, paint);
         paint.setStyle(Paint.Style.STROKE);
-        paint.setColor(Color.CYAN);
+        paint.setColor(Color.WHITE);
         paint.setStrokeWidth(3);
-        /*matrix.setRotate(30);
-        canvas.setMatrix(matrix);*/
-        //canvas.rotate(-162);
         canvas.drawOval(125, 50, 600, 300, paint);
         canvas.rotate(30);
 
